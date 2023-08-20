@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title> Square Finder App by Ayush </title>
+	<style>
+		*{font-size: 30px;}
+		body{background-color:lightblue;}
+	</style>
+</head>
+<body>
+	<center>
+	<h1> Result Page</h1>
+	<h2 id="ans"/>
+	<script>
+		let ans = document.getElementById("ans");
+		let res = localStorage.getItem("res");
+		if(res == null)
+		{
+			ans.innerHTML = "u did Not enter number";
+		}
+		else
+		{
+			ans.innerHTML = "square= " + res;
+		}
+	</script>
+	<br><br>
+		<a href="index.html"> Home </a>
+	</center>
+</body>
+</html>
